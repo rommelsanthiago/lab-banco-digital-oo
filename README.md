@@ -24,3 +24,8 @@ Projeto de Banco Digital utilizando Java e orientação a objetos, com Spring Bo
     ```sh
     mvn spring-boot:run
     ```
+
+4. Execute os tests do projeto:
+    ```sh
+    mvn test
+    ```
