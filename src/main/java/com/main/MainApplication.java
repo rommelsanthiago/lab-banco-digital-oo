@@ -18,8 +18,13 @@ public class MainApplication implements CommandLineRunner {
 		System.out.println("Nome do novo cliente: " + rommel.getNome());
 
 		Conta cc = new ContaCorrente(rommel);
+		Conta poupanca = new ContaPoupanca(rommel);
+
 		cc.depositar(100);
 		cc.sacar(50);
-		cc.imprimirInfosComuns();
+		cc.transferir(100, poupanca);
+		
+		cc.imprimirExtrato();
+		poupanca.imprimirExtrato();
 	}
 }
