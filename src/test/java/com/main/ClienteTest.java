@@ -1,4 +1,3 @@
-// Arquivo: src/test/java/com/example/ClienteTest.java
 package com.main;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
