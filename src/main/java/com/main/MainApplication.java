@@ -17,9 +17,9 @@ public class MainApplication implements CommandLineRunner {
 		rommel.setNome("Rommel");
 		System.out.println("Nome do novo cliente: " + rommel.getNome());
 
-		Conta conta = new Conta(rommel);
-		conta.depositar(100);
-		conta.sacar(50);
-		conta.imprimirInfosComuns();
+		Conta cc = new ContaCorrente(rommel);
+		cc.depositar(100);
+		cc.sacar(50);
+		cc.imprimirInfosComuns();
 	}
 }
