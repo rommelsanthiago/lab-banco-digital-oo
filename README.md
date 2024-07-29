@@ -29,3 +29,8 @@ Projeto de Banco Digital utilizando Java e orientação a objetos, com Spring Bo
     ```sh
     mvn test
     ```
+
+5. Builda a documentação do projeto
+   ```sh
+   mvn javadoc:javadoc
+   ```
