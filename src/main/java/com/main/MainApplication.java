@@ -6,13 +6,36 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Classe principal da aplicação Spring Boot que configura e executa a aplicação.
+ * 
+ * <p>Esta classe implementa a interface {@link CommandLineRunner} para executar um código de exemplo quando a aplicação é iniciada.</p>
+ * 
+ * @author Rommel
+ * @version 1.0
+ */
+
 @SpringBootApplication
 public class MainApplication implements CommandLineRunner {
 
+	/**
+     * Método principal que inicia a aplicação Spring Boot.
+     * 
+     * @param args os argumentos da linha de comando
+     */
 	public static void main(String[] args) {
 		SpringApplication.run(MainApplication.class, args);
 	}
 
+	/**
+     * Método chamado após a inicialização da aplicação Spring Boot.
+     * 
+     * <p>Este método cria instâncias de {@link Cliente}, {@link ContaCorrente}, {@link ContaPoupanca} e {@link Banco}, 
+     * realiza operações básicas como depósito, saque e transferência, e imprime os extratos e informações das contas.</p>
+     * 
+     * @param args os argumentos da linha de comando
+     * @throws Exception se ocorrer algum erro durante a execução
+     */
 	@Override
 	public void run(String... args) throws Exception {
 		Cliente rommel = new Cliente();
